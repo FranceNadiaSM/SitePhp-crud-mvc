@@ -1,6 +1,7 @@
 <html>
     <head>
-
+        <meta charset=UTF-8>
+        <title>Estrutura</title>
     </head>
 
     <body>
@@ -16,7 +17,7 @@
                 .flutuacao-dir{float: right;}
 
                 #conteudo{background-color: #FFF; padding: 20px 25px;}
-                #conteudo h1{font: 24px Arial; color: greenyellow; margin-bottom: 20px;}
+                #conteudo h1{font: 24px Arial; color: limegreen; margin-bottom: 20px;  font-weight: bold;}
                 #conteudo article{margin-bottom: 20px;}
                           article h2{margin-bottom: 7px;}
                           article h2 a{font: 22px Arial; color: #333; text-decoration: none;}
@@ -29,17 +30,15 @@
             <div id="topo">
                 <header>
                     <nav>
-                        <a href="http://localhost/SITE-PHP/">Home</a> |
-                        <a href="http://localhost/SITE-PHP/?pagina=sobre">Sobre</a>
-                        <a href="http://localhost/SITE-PHP/?pagina=admin&metodo=index" class="flutuacao-dir">Admin</a>
+                        <a href="http://localhost:8080/SitePhp-crud-mvc/">Home</a> |
+                        <a href="http://localhost:8080/SitePhp-crud-mvc/?pagina=sobre">Sobre</a>
+                        <a href="http://localhost:8080/SitePhp-crud-mvc/?pagina=admin&metodo=index" class="flutuacao-dir">Admin</a>
                     </nav>
                 </header>
             </div>
 
             <div id="conteudo">
                 {{area_dinamica}}
-                
-
             </div>
         </div>
     </body>

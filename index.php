@@ -19,6 +19,7 @@ require_once 'vendor/autoload.php';
 
 
 $template = file_get_contents('app/Template/estrutura.html');
+//echo $template;die();
 
 ob_start();
     $core = new Core;
@@ -28,3 +29,4 @@ ob_start();
 ob_end_clean();
 
 $tplPronto = str_replace('{{area_dinamica}}', $saida, $template);
+echo $tplPronto;

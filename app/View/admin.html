@@ -1,18 +1,23 @@
 <h1>Gerenciador de Conteúdo</h1>
 
-<a href="http://localhost/SITE-PHP/?pagina=admin&metodo=create">Criar Publicação</a><br><br>
+<a href="http://localhost:8080/SitePhp-crud-mvc/?pagina=admin&metodo=create">Criar Publicação</a><br><br>
 <hr>
 <br><table border="2">
     <tr>
         <th>ID</th>
-        <tr>TÍTULO</tr>
-        <tr>ALTERAÇÃO</tr>
-        <tr>DELEÇÃO</tr>
+        <th>TÍTULO</th>
+        <th>ALTERAÇÃO</th>
+        <th>DELEÇÃO</th>
     </tr>
+
+
+    {% for postagem in postagens %}
     <tr>
-        <th>ID</th>
-        <tr>TÍTULO</tr>
-        <tr>ALTERAÇÃO</tr>
-        <tr>DELEÇÃO</tr>
+        <th>{{postagem.id}}</th>
+        <th>{{postagem.titulo}}</th>
+        <th><a href="http://localhost:8080/SitePhp-crud-mvc/?pagina=admin&metodo=change&id={{postagem.id}}">ALTERAÇÃO</a></th>
+        <th><a href="http://localhost:8080/SitePhp-crud-mvc/?pagina=admin&metodo=delete&id={{postagem.id}}">DELEÇÃO</a></th>
     </tr>
+    {% endfor %}
+
 </table>
