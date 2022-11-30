@@ -7,7 +7,7 @@ abstract class Connection
     public static function getConn()
     {
         if (self::$conn == null){
-            self::$conn = new PDO('mysql:host=127.0.0.1; dbname=sitePhp', 'root', '123456789');
+            self::$conn = new PDO('mysql:host=127.0.0.1; dbname=sitePhp', 'admin', '123456789');
         }
 
         return self::$conn;
